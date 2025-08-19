@@ -102,7 +102,7 @@ layers:
     - [
         { t: LSHFT, h: sticky },
         { t: Game, h: toggle },
-        { t: ▽, type: trans },
+        { t: Base, h: toggle },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },

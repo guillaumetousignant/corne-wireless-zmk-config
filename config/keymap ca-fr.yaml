@@ -35,16 +35,16 @@ layers:
   Lower:
     - [
         TAB,
-        { t: ▽, type: trans },
+        HOME,
         UP,
-        { t: ▽, type: trans },
+        PAGE UP,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: "7", s: "&", right: "¦" },
         { t: "8", s: "*", right: "²" },
         { t: "9", s: "(", right: "³" },
-        HOME,
-        END,
+        { t: "-", s: "_", right: "½" },
+        { t: "=", s: "+", right: "¾" },
         BSPC,
       ]
     - [
@@ -57,15 +57,15 @@ layers:
         { t: "4", s: "$", right: "¢" },
         { t: "5", s: "%", right: "¤" },
         { t: "6", s: "?", right: "¬" },
-        PAGE UP,
-        PAGE DOWN,
+        _,
+        +,
         INSERT,
       ]
     - [
         { t: LSHFT, h: sticky },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        END,
+        DOWN,
+        PAGE DOWN,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: "1", s: "!", right: "±" },
@@ -86,13 +86,12 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-
-        { t: "-", s: "_", right: "½" },
-        { t: "=", s: "+", right: "¾" },
-        { t: "^", s: "^", right: "[" },
-        { t: "¸", s: "¨", right: "]" },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
         { t: "<", s: ">", right: "}" },
-        { t: "#", s: "|", right: "\\" },
+        { t: "¸", s: "¨", right: "]" },
       ]
     - [
         { t: LSHFT, h: sticky },
@@ -101,12 +100,12 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        _,
-        +,
-        "^",
-        "¨",
-        ">",
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: "#", s: "|", right: "\\" },
         "|",
+        ">",
+        "¨",
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]
     - [RET, { type: held }, RALT]

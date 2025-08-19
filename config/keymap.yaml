@@ -9,16 +9,16 @@ layers:
   Lower:
     - [
         TAB,
-        { t: ▽, type: trans },
+        HOME,
         UP,
-        { t: ▽, type: trans },
+        PAGE UP,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         "7",
         "8",
         "9",
-        HOME,
-        END,
+        "-",
+        "=",
         BSPC,
       ]
     - [
@@ -31,15 +31,15 @@ layers:
         "4",
         "5",
         "6",
-        PAGE UP,
-        PAGE DOWN,
+        _,
+        +,
         INSERT,
       ]
     - [
         { t: LSHFT, h: sticky },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        END,
+        DOWN,
+        PAGE DOWN,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         "1",
@@ -60,12 +60,12 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        "-",
-        "=",
-        "[",
-        "]",
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
         \,
-        "`",
+        "]",
       ]
     - [
         { t: LSHFT, h: sticky },
@@ -74,12 +74,12 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        _,
-        +,
-        "{",
-        "}",
-        "|",
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        "`",
         "~",
+        "|",
+        "}",
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]
     - [RET, { type: held }, RALT]

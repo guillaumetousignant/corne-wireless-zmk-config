@@ -86,12 +86,13 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        "-",
-        "=",
-        "[",
-        "¸",
-        <,
-        "#",
+
+        { t: "-", s: "_", right: "½" },
+        { t: "=", s: "+", right: "¾" },
+        { t: "^", s: "^", right: "[" },
+        { t: "¸", s: "¨", right: "]" },
+        { t: "<", s: ">", right: "}" },
+        { t: "#", s: "|", right: "\\" },
       ]
     - [
         { t: LSHFT, h: sticky },
@@ -102,7 +103,7 @@ layers:
         { t: ▽, type: trans },
         _,
         +,
-        "{",
+        "^",
         "¨",
         ">",
         "|",

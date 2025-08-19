@@ -86,11 +86,11 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
+        { t: "#", s: "|", right: "\\" },
+        "|",
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: "<", s: ">", right: "}" },
         { t: "¸", s: "¨", right: "]" },
       ]
     - [
@@ -101,10 +101,10 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: "#", s: "|", right: "\\" },
-        "|",
+        { t: "<", s: ">", right: "}" },
         ">",
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
         "¨",
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]

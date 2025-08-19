@@ -1,0 +1,188 @@
+layout: { zmk_keyboard: corne }
+layers:
+  Base:
+    - [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC]
+    - [
+        LCTRL,
+        A,
+        S,
+        D,
+        F,
+        G,
+        H,
+        J,
+        K,
+        L,
+        { t: ;, s: ":", right: "~" },
+        { t: "`", s: "`", right: "{" },
+      ]
+    - [
+        { t: LSHFT, h: sticky },
+        Z,
+        X,
+        C,
+        V,
+        B,
+        N,
+        M,
+        { t: ",", s: "'", right: "¯" },
+        { t: ".", s: ".", right: "ISP" },
+        { t: "é", s: "É", right: "´" },
+        { t: "^", s: "^", right: "[" },
+      ]
+    - [LGUI, { t: Lower, h: Lower }, SPACE]
+    - [RET, { t: Raise, h: Raise }, RALT]
+  Lower:
+    - [
+        TAB,
+        { t: ▽, type: trans },
+        UP,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: "7", s: "&", right: "¦" },
+        { t: "8", s: "*", right: "²" },
+        { t: "9", s: "(", right: "³" },
+        HOME,
+        END,
+        BSPC,
+      ]
+    - [
+        LCTRL,
+        LEFT,
+        DOWN,
+        RIGHT,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: "4", s: "$", right: "¢" },
+        { t: "5", s: "%", right: "¤" },
+        { t: "6", s: "?", right: "¬" },
+        PAGE UP,
+        PAGE DOWN,
+        INSERT,
+      ]
+    - [
+        { t: LSHFT, h: sticky },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: "1", s: "!", right: "±" },
+        { t: "2", s: '"', right: "@" },
+        { t: "3", s: "/", right: "£" },
+        { t: "0", s: ")", right: "¼" },
+        DELETE,
+        ESC,
+      ]
+    - [LGUI, { type: held }, SPACE]
+    - [RET, { t: ▽, type: trans }, RALT]
+  Raise:
+    - [TAB, "!", '"', "/", $, "%", "?", "&", "*", (, ), BSPC]
+    - [
+        LCTRL,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        "-",
+        "=",
+        "[",
+        "¸",
+        <,
+        "#",
+      ]
+    - [
+        { t: LSHFT, h: sticky },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        _,
+        +,
+        "{",
+        "¨",
+        ">",
+        "|",
+      ]
+    - [LGUI, { t: ▽, type: trans }, SPACE]
+    - [RET, { type: held }, RALT]
+  Function:
+    - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12]
+    - [
+        LCTRL,
+        { t: BT, h: "0" },
+        { t: BT, h: "1" },
+        { t: BT, h: "2" },
+        { t: BT, h: "3" },
+        { t: BT, h: "4" },
+        LEFT,
+        DOWN,
+        UP,
+        RIGHT,
+        { t: ▽, type: trans },
+        BT CLR,
+      ]
+    - [
+        { t: LSHFT, h: sticky },
+        { t: Game, h: toggle },
+        { t: Base, h: toggle },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+      ]
+    - [LGUI, { type: held }, SPACE]
+    - [RET, { type: held }, RALT]
+  Game:
+    - [
+        TAB,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        BSPC,
+      ]
+    - [
+        LCTRL,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+      ]
+    - [
+        LSHFT,
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+        { t: ▽, type: trans },
+      ]
+    - [LGUI, { t: ▽, type: trans }, SPACE]
+    - [RET, { t: ▽, type: trans }, RALT]

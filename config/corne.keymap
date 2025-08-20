@@ -23,6 +23,13 @@
                         tapping-term-ms = <200>;
                         bindings = <&mo>, <&tog>;
                 };
+
+                alt_tab: alt_tab_ralt {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&kp TAB>, <&kp RA(TAB)>;
+                        mods = <(MOD_RALT)>;
+                };
         };
 
         keymap {
@@ -36,7 +43,7 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         display-name = "Base";
                         bindings = <
-   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &alt_tab  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LBKT
                   &kp LGUI &mo_tog LOWER LOWER &kp SPACE   &kp RET &mo_tog RAISE RAISE &kp RALT
@@ -51,7 +58,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-   &kp TAB    &kp HOME &kp UP   &kp PAGE_UP   &trans &kp CLCK   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
+   &alt_tab   &kp HOME &kp UP   &kp PAGE_UP   &trans &kp CLCK   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
    &kp LCTRL  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp SLCK   &kp N4 &kp N5 &kp N6 &kp UNDER &kp PLUS   &kp INSERT
    &sk LSHFT  &kp END  &kp DOWN &kp PAGE_DOWN &trans &trans     &kp N1 &kp N2 &kp N3 &kp N0    &kp DELETE &kp ESC
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
@@ -66,7 +73,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
+   &alt_tab  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
    &kp LCTRL &kp RA(N1) &kp RA(N2) &kp RA(GRAVE) &kp RA(N4) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
    &sk LSHFT &trans     &trans     &trans        &trans     &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT

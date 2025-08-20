@@ -45,15 +45,15 @@
 
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB | HOME |  UP | PGUP |     | CLCK |   |  7  |  8  |  9  |  -  |  =  | BKSP |
-// | CTRL |  LFT | DWN |  RGT |     | SLCK |   |  4  |  5  |  6  |  _  |  +  |  INS |
-// | SHFT |  END | DWN | PGDN |     |      |   |  1  |  2  |  3  |  0  | DEL |  ESC |
+// |  TAB | HOME |  UP | PGUP |     |      |   |  7  |  8  |  9  |  -  |  =  | BKSP |
+// | CTRL |  LFT | DWN |  RGT |     | CLCK |   |  4  |  5  |  6  |  _  |  +  |  INS |
+// | SHFT |  END | DWN | PGDN |     | SLCK |   |  1  |  2  |  3  |  0  | DEL |  ESC |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-   &kp TAB    &kp HOME &kp UP   &kp PAGE_UP   &trans &kp CLCK   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
-   &kp LCTRL  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp SLCK   &kp N4 &kp N5 &kp N6 &kp UNDER &kp PLUS   &kp INSERT
-   &sk LSHFT  &kp END  &kp DOWN &kp PAGE_DOWN &trans &trans     &kp N1 &kp N2 &kp N3 &kp N0    &kp DELETE &kp ESC
+   &kp TAB    &kp HOME &kp UP   &kp PAGE_UP   &trans &trans     &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
+   &kp LCTRL  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp CLCK   &kp N4 &kp N5 &kp N6 &kp UNDER &kp PLUS   &kp INSERT
+   &sk LSHFT  &kp END  &kp DOWN &kp PAGE_DOWN &trans &kp SLCK   &kp N1 &kp N2 &kp N3 &kp N0    &kp DELETE &kp ESC
                           	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp LALT
                         >;
                 };

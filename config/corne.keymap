@@ -61,14 +61,14 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL | RA! | RA@ | RA` | RA$ |     |   | RA; |  `  |  ~  | RA[ | RA] |  ]   |
+// | CTRL | RA1 | RA2 | RA` | RA4 |     |   | RA; |  `  |  ~  | RA[ | RA] |  ]   |
 // | SHFT |     |     |     |     |     |   |     |  \  | "|" | RA' | RA\ |  }   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
-   &kp  TAB  &kp EXCL     &kp AT     &kp HASH      &kp DLLR     &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
-   &kp LCTRL &kp RA(EXCL) &kp RA(AT) &kp RA(GRAVE) &kp RA(DLLR) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
-   &sk LSHFT &trans       &trans     &trans        &trans       &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
+   &kp  TAB  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
+   &kp LCTRL &kp RA(N1) &kp RA(N2) &kp RA(GRAVE) &kp RA(N4) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
+   &sk LSHFT &trans     &trans     &trans        &trans     &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };

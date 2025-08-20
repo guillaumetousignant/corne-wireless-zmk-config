@@ -55,10 +55,10 @@ layers:
     - [TAB, "!", "@", "#", $, "%", ^, "&", KP MULTIPLY, (, ), BSPC]
     - [
         LCTRL,
-        AltGr+!,
-        AltGr+@,
+        AltGr+1,
+        AltGr+2,
         AltGr+`,
-        AltGr+$,
+        AltGr+4,
         { t: ▽, type: trans },
         AltGr+;,
         "`",

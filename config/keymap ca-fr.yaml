@@ -154,7 +154,7 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        BSPC,
+        { t: ▽, type: trans },
       ]
     - [
         LCTRL,
@@ -182,7 +182,7 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        ESC,
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]
     - [RET, { t: ▽, type: trans }, RALT]

@@ -90,15 +90,15 @@
 
                 game_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |     |     |     |     |     | BKSP |
-// | CTRL |     |     |     |     |     |   |     |     |     |     |     |      |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+// |  TAB |     |     |     |     |     |   |     |     |     |     |     |     |
+// | CTRL |     |     |     |     |     |   |     |     |     |     |     |     |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     | ESC |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Game";
                         bindings = <
-   &kp  TAB  &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &kp BSPC
+   &kp  TAB  &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
    &kp LCTRL &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
-   &kp LSHFT &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
+   &kp LSHFT &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &kp ESC
                     	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };

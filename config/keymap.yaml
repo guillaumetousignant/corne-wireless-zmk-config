@@ -5,7 +5,7 @@ layers:
     - [LCTRL, A, S, D, F, G, H, J, K, L, ;, "'"]
     - [{ t: LSHFT, h: sticky }, Z, X, C, V, B, N, M, ",", ., /, "["]
     - [LGUI, { t: Lower, h: Lower }, SPACE]
-    - [RET, { t: Raise, h: Raise }, RALT]
+    - [RET, { t: Raise, h: Raise }, LALT]
   Lower:
     - [
         TAB,
@@ -50,7 +50,7 @@ layers:
         ESC,
       ]
     - [LGUI, { type: held }, SPACE]
-    - [RET, { t: ▽, type: trans }, RALT]
+    - [RET, { t: ▽, type: trans }, LALT]
   Raise:
     - [TAB, "!", "@", "#", $, "%", ^, "&", KP MULTIPLY, (, ), BSPC]
     - [
@@ -82,7 +82,7 @@ layers:
         "}",
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]
-    - [RET, { type: held }, RALT]
+    - [RET, { type: held }, LALT]
   Function:
     - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12]
     - [
@@ -114,7 +114,7 @@ layers:
         { t: ▽, type: trans },
       ]
     - [LGUI, { type: held }, SPACE]
-    - [RET, { type: held }, RALT]
+    - [RET, { type: held }, LALT]
   Game:
     - [
         TAB,
@@ -159,4 +159,4 @@ layers:
         ESC,
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]
-    - [RET, { t: ▽, type: trans }, RALT]
+    - [RET, { t: ▽, type: trans }, LALT]

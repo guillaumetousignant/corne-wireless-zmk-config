@@ -23,13 +23,6 @@
                         tapping-term-ms = <200>;
                         bindings = <&mo>, <&tog>;
                 };
-
-                alt_tab: alt_tab_ralt {
-                        compatible = "zmk,behavior-mod-morph";
-                        #binding-cells = <0>;
-                        bindings = <&kp TAB>, <&kp LA(TAB)>;
-                        mods = <(MOD_RALT)>;
-                };
         };
 
         keymap {
@@ -43,10 +36,10 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         display-name = "Base";
                         bindings = <
-   &alt_tab  &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LBKT
-                  &kp LGUI &mo_tog LOWER LOWER &kp SPACE   &kp RET &mo_tog RAISE RAISE &kp RALT
+                  &kp LGUI &mo_tog LOWER LOWER &kp SPACE   &kp RET &mo_tog RAISE RAISE &kp LALT
                         >;
                 };
 
@@ -58,10 +51,10 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
-   &alt_tab   &kp HOME &kp UP   &kp PAGE_UP   &trans &kp CLCK   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
+   &kp TAB    &kp HOME &kp UP   &kp PAGE_UP   &trans &kp CLCK   &kp N7 &kp N8 &kp N9 &kp MINUS &kp EQUAL  &kp BSPC
    &kp LCTRL  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp SLCK   &kp N4 &kp N5 &kp N6 &kp UNDER &kp PLUS   &kp INSERT
    &sk LSHFT  &kp END  &kp DOWN &kp PAGE_DOWN &trans &trans     &kp N1 &kp N2 &kp N3 &kp N0    &kp DELETE &kp ESC
-                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+                          	        &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp LALT
                         >;
                 };
 
@@ -73,10 +66,10 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
-   &alt_tab  &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
+   &kp TAB   &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
    &kp LCTRL &kp RA(N1) &kp RA(N2) &kp RA(GRAVE) &kp RA(N4) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
    &sk LSHFT &trans     &trans     &trans        &trans     &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp LALT
                         >;
                 };
 
@@ -91,7 +84,7 @@
    &kp  F1   &kp F2       &kp F3       &kp F4       &kp F5       &kp F6         &kp F7    &kp F8    &kp F9   &kp F10   &kp F11  &kp F12
    &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans   &bt BT_CLR
    &sk LSHFT &tog GAME    &to DEFAULT  &trans       &trans       &trans         &trans    &trans    &trans   &trans    &trans   &trans
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp LALT
                         >;
                 };
 
@@ -106,7 +99,7 @@
    &kp  TAB  &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
    &kp LCTRL &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &trans
    &kp LSHFT &trans &trans &trans &trans &trans   &trans &trans &trans &trans &trans &kp ESC
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp LALT
                         >;
                 };
 

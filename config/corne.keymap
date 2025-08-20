@@ -27,7 +27,7 @@
                 alt_tab: alt_tab_ralt {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
-                        bindings = <&kp TAB>, <&kp RA(TAB)>;
+                        bindings = <&kp TAB>, <&kp LA(TAB)>;
                         mods = <(MOD_RALT)>;
                 };
         };

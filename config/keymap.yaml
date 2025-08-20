@@ -55,16 +55,16 @@ layers:
     - [TAB, "!", "@", "#", $, "%", ^, "&", KP MULTIPLY, (, ), BSPC]
     - [
         LCTRL,
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        AltGr+!,
+        AltGr+@,
+        AltGr+`,
+        AltGr+$,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         "`",
         "~",
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        "AltGr+[",
+        "AltGr+]",
         "]",
       ]
     - [
@@ -77,8 +77,8 @@ layers:
         { t: ▽, type: trans },
         \,
         "|",
-        { t: ▽, type: trans },
-        { t: ▽, type: trans },
+        AltGr+',
+        AltGr+\,
         "}",
       ]
     - [LGUI, { t: ▽, type: trans }, SPACE]

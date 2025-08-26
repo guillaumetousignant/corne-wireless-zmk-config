@@ -3,7 +3,7 @@ layers:
   Base:
     - [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC]
     - [
-        LCTRL,
+        { t: LCTRL, h: sticky },
         A,
         S,
         D,
@@ -30,8 +30,8 @@ layers:
         { t: "é", s: "É", right: "´" },
         { t: "^", s: "^", right: "[" },
       ]
-    - [LGUI, { t: Lower, h: Lower }, SPACE]
-    - [RET, { t: Raise, h: Raise }, LALT]
+    - [{ t: LGUI, h: sticky }, { t: Lower, h: Lower }, SPACE]
+    - [RET, { t: Raise, h: Raise }, { t: LALT, h: sticky }]
   Lower:
     - [
         TAB,
@@ -48,7 +48,7 @@ layers:
         BSPC,
       ]
     - [
-        LCTRL,
+        { t: LCTRL, h: sticky },
         LEFT,
         DOWN,
         RIGHT,
@@ -75,12 +75,12 @@ layers:
         DELETE,
         ESC,
       ]
-    - [LGUI, { type: held }, SPACE]
-    - [RET, { t: ▽, type: trans }, LALT]
+    - [{ t: LGUI, h: sticky }, { type: held }, SPACE]
+    - [RET, { t: ▽, type: trans }, { t: LALT, h: sticky }]
   Raise:
     - [TAB, "!", '"', "/", $, "%", "?", "&", "*", (, ), BSPC]
     - [
-        LCTRL,
+        { t: LCTRL, h: sticky },
         ±,
         "@",
         "\\",
@@ -107,12 +107,12 @@ layers:
         "}",
         "¨",
       ]
-    - [LGUI, { t: ▽, type: trans }, SPACE]
-    - [RET, { type: held }, LALT]
+    - [{ t: LGUI, h: sticky }, { t: ▽, type: trans }, SPACE]
+    - [RET, { type: held }, { t: LALT, h: sticky }]
   Function:
     - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12]
     - [
-        LCTRL,
+        { t: LCTRL, h: sticky },
         { t: BT, h: "0" },
         { t: BT, h: "1" },
         { t: BT, h: "2" },
@@ -139,8 +139,8 @@ layers:
         { t: ▽, type: trans },
         { t: ▽, type: trans },
       ]
-    - [LGUI, { type: held }, SPACE]
-    - [RET, { type: held }, LALT]
+    - [{ t: LGUI, h: sticky }, { type: held }, SPACE]
+    - [RET, { type: held }, { t: LALT, h: sticky }]
   Game:
     - [
         TAB,

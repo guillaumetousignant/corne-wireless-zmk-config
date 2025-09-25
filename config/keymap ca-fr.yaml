@@ -31,7 +31,7 @@ layers:
         { t: "^", s: "^", right: "[" },
       ]
     - [{ t: LGUI, h: sticky }, { t: Lower, h: Lower }, SPACE]
-    - [RET, { t: Raise, h: Raise }, { t: LALT, h: sticky }]
+    - [RET, { t: Raise, h: sticky }, { t: LALT, h: sticky }]
   Lower:
     - [
         TAB,

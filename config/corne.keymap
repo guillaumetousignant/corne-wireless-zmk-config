@@ -31,14 +31,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  [   |
+// | SHFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | CTRL |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  [   |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         display-name = "Base";
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &sk LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &sk LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LBKT
+   &sk LSHFT &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &sk LCTRL &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp LBKT
    &kp LGUI  &mo_tog LOWER LOWER &kp SPACE   &kp RET &sl RAISE &sk LALT
                         >;
                 };
@@ -46,14 +46,14 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB | HOME |  UP | PGUP |     |      |   |  1  |  2  |  3  |  -  |  =  | BKSP |
-// | CTRL |  LFT | DWN |  RGT |     | CLCK |   |  4  |  5  |  6  |  _  |  +  |  INS |
-// | SHFT |  END | DWN | PGDN |     | SLCK |   |  7  |  8  |  9  |  0  | DEL |  ESC |
+// | SHFT |  LFT | DWN |  RGT |     | CLCK |   |  4  |  5  |  6  |  _  |  +  |  INS |
+// | CTRL |  END | DWN | PGDN |     | SLCK |   |  7  |  8  |  9  |  0  | DEL |  ESC |
 //                     |  GUI |     |  SPC |   | ENT |     | ALT |
                         display-name = "Lower";
                         bindings = <
    &kp TAB    &kp HOME &kp UP   &kp PAGE_UP   &trans &trans     &kp N1  &kp N2 &kp N3   &kp MINUS &kp EQUAL  &kp BSPC
-   &sk LCTRL  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp CLCK   &kp N4  &kp N5 &kp N6   &kp UNDER &kp PLUS   &kp INSERT
-   &sk LSHFT  &kp END  &kp DOWN &kp PAGE_DOWN &trans &kp SLCK   &kp N7  &kp N8 &kp N9   &kp N0    &kp DELETE &kp ESC
+   &sk LSHFT  &kp LEFT &kp DOWN &kp RIGHT     &trans &kp CLCK   &kp N4  &kp N5 &kp N6   &kp UNDER &kp PLUS   &kp INSERT
+   &sk LCTRL  &kp END  &kp DOWN &kp PAGE_DOWN &trans &kp SLCK   &kp N7  &kp N8 &kp N9   &kp N0    &kp DELETE &kp ESC
                        &kp LGUI &trans        &kp SPACE         &kp RET &trans &sk LALT
                         >;
                 };
@@ -61,29 +61,29 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL | RA1 | RA2 | RA` | RA4 |     |   | RA; |  `  |  ~  | RA[ | RA] |  ]   |
-// | SHFT |     |     |     |     |     |   |     |  \  | "|" | RA' | RA\ |  }   |
+// | SHFT | RA1 | RA2 | RA` | RA4 |     |   | RA; |  `  |  ~  | RA[ | RA] |  ]   |
+// | CTRL |     |     |     |     |     |   |     |  \  | "|" | RA' | RA\ |  }   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Raise";
                         bindings = <
    &kp TAB   &kp EXCL   &kp AT     &kp HASH      &kp DLLR   &kp PRCNT   &kp CARET    &kp AMPS  &kp KP_MULTIPLY &kp LPAR     &kp RPAR     &kp BSPC
-   &sk LCTRL &kp RA(N1) &kp RA(N2) &kp RA(GRAVE) &kp RA(N4) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
-   &sk LSHFT &trans     &trans     &trans        &trans     &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
+   &sk LSHFT &kp RA(N1) &kp RA(N2) &kp RA(GRAVE) &kp RA(N4) &trans      &kp RA(SEMI) &kp GRAVE &kp TILDE       &kp RA(LBKT) &kp RA(RBKT) &kp RBKT
+   &sk LCTRL &trans     &trans     &trans        &trans     &trans      &trans       &kp BSLH  &kp PIPE        &kp RA(SQT)  &kp RA(BSLH) &kp RBRC
                     	          &kp LGUI       &trans     &kp SPACE   &kp RET      &trans    &sk LALT
                         >;
                 };
 
                 func_layer {
 // -----------------------------------------------------------------------------------------
-// |  F1  |  F2  |  F3 |  F4 |  F5 |  F6 |   |  F7 |  F8 |  F9 | F10 | F11 |  F12  |
-// | CTRL |  BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     | BTCLR |
-// | SHFT | GAME | DEF |     |     |     |   |     |     |     |     |     |       |
+// |  F1  |  F2 |  F3  |  F4 |  F5 |  F6 |   |  F7 |  F8 |  F9 | F10 | F11 |  F12  |
+// | SHFT | BT1 |  BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     | BTCLR |
+// | CTRL | DEF | GAME |     |     |     |   |     |     |     |     |     |       |
 //                     | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Function";
                         bindings = <
    &kp  F1   &kp F2       &kp F3       &kp F4       &kp F5       &kp F6         &kp F7    &kp F8    &kp F9   &kp F10   &kp F11  &kp F12
    &sk LCTRL &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans   &bt BT_CLR
-   &sk LSHFT &to GAME     &to DEFAULT  &trans       &trans       &trans         &trans    &trans    &trans   &trans    &trans   &trans
+   &sk LSHFT &to DEFAULT  &to GAME     &trans       &trans       &trans         &trans    &trans    &trans   &trans    &trans   &trans
                                        &kp LGUI     &trans       &kp SPACE      &kp RET   &trans    &sk LALT
                         >;
                 };
@@ -91,14 +91,14 @@
                 game_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |     |     |     |     |     |   |     |     |     |     |     |     |
-// | CTRL |     |     |     |     |     |   |     |     |     |     |     |     |
-// | SHFT |     |     |     |     |     |   |     |     |     |     |     | ESC |
+// | SHFT |     |     |     |     |     |   |     |     |     |     |     |     |
+// | CTRL |     |     |     |     |     |   |     |     |     |     |     | ESC |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         display-name = "Game";
                         bindings = <
    &kp  TAB  &trans &trans &trans   &trans &trans      &trans  &trans &trans   &trans &trans &trans
-   &kp LCTRL &trans &trans &trans   &trans &trans      &trans  &trans &trans   &trans &trans &trans
-   &kp LSHFT &trans &trans &trans   &trans &trans      &trans  &trans &trans   &trans &trans &kp ESC
+   &kp LSHFT &trans &trans &trans   &trans &trans      &trans  &trans &trans   &trans &trans &trans
+   &kp LCTRL &trans &trans &trans   &trans &trans      &trans  &trans &trans   &trans &trans &kp ESC
                            &kp LGUI &trans &kp SPACE   &kp RET &trans &kp LALT
                         >;
                 };

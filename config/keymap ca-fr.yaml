@@ -3,7 +3,7 @@ layers:
   Base:
     - [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC]
     - [
-        { t: LCTRL, h: sticky },
+        { t: LSHFT, h: sticky },
         A,
         S,
         D,
@@ -17,7 +17,7 @@ layers:
         { t: "`", s: "`", right: "{" },
       ]
     - [
-        { t: LSHFT, h: sticky },
+        { t: LCTRL, h: sticky },
         Z,
         X,
         C,
@@ -48,7 +48,7 @@ layers:
         BSPC,
       ]
     - [
-        { t: LCTRL, h: sticky },
+        { t: LSHFT, h: sticky },
         LEFT,
         DOWN,
         RIGHT,
@@ -62,7 +62,7 @@ layers:
         INSERT,
       ]
     - [
-        { t: LSHFT, h: sticky },
+        { t: LCTRL, h: sticky },
         END,
         DOWN,
         PAGE DOWN,
@@ -80,7 +80,7 @@ layers:
   Raise:
     - [TAB, "!", '"', "/", $, "%", "?", "&", "*", (, ), BSPC]
     - [
-        { t: LCTRL, h: sticky },
+        { t: LSHFT, h: sticky },
         ±,
         "@",
         "\\",
@@ -94,7 +94,7 @@ layers:
         { t: "¸", s: "¨", right: "]" },
       ]
     - [
-        { t: LSHFT, h: sticky },
+        { t: LCTRL, h: sticky },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
@@ -112,7 +112,7 @@ layers:
   Function:
     - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12]
     - [
-        { t: LCTRL, h: sticky },
+        { t: LSHFT, h: sticky },
         { t: BT, h: "0" },
         { t: BT, h: "1" },
         { t: BT, h: "2" },
@@ -126,9 +126,9 @@ layers:
         BT CLR,
       ]
     - [
-        { t: LSHFT, h: sticky },
-        { t: Game, h: toggle },
+        { t: LCTRL, h: sticky },
         { t: Base, h: toggle },
+        { t: Game, h: toggle },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
@@ -157,7 +157,7 @@ layers:
         { t: ▽, type: trans },
       ]
     - [
-        LCTRL,
+        LSHFT,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
@@ -171,7 +171,7 @@ layers:
         { t: ▽, type: trans },
       ]
     - [
-        LSHFT,
+        LCTRL,
         { t: ▽, type: trans },
         { t: ▽, type: trans },
         { t: ▽, type: trans },
